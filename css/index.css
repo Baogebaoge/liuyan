@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	resize: none;
+	border: 0;
+	font-size: 14px;
+}
+.box{
+	width: 800px;
+	height: auto;
+	margin: 0 auto;
+	border: 1px solid #666;
+	margin-top: 50px;
+	padding: 30px 20px;
+	background-color: #ccc;
+}
+.box1,.box2{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+input{
+	width: 100%;
+	height: 50px;
+	outline: none;
+	font-size: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	background-color: #999;
+}
+textarea{
+	width: 100%;
+	height: 300px;
+	outline: none;
+	font-size: 25px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: #999;
+}
+.p{
+	width: 100%;
+	height: auto;
+}
+.p > p{
+	width: 100%;
+	padding: 3px 5px;
+	margin: 0 3px 20px 10px;
+}
+p span{
+	font-size: 15px;
+	color: blue;
+}
+button{
+	width: 100%;
+	height: 30px;
+	background-color: #6392cf;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	font-size: 20px;
+}
+.box ul{
+	width: 100%;
+	height: auto;
+}
+.box ul li{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid blue;
+	display: flex;
+	margin-bottom: 10px;
+}
+.box ul img{
+	width: 80px;
+	height: 80px;
+}
+.box ul h1{
+	font-size: 15px;
+	line-height: 30px;
+	color: #000;
+	margin-left: 15px;
+}
+.box ul p{
+	font-size: 15px;
+	line-height: 30px;
+	color: #000;
+	margin-left: 15px;
+}

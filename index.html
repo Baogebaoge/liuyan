@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>留言</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="index.js"></script>
+</head>
+<body>
+	<div class="box">
+		<section class="box1">
+			<input type="text">
+		</section>
+		<section class="box1">
+			<textarea class="text" maxlength="200"></textarea>
+		</section>
+		<div class="p">	
+			<p>你已经输入了<span class="span1">0</span>个字,还能输入<span class="span2">200</span>个字,一共能输入<span>200</span>个字</p>
+		</div>
+		<div class="box2">
+			<button>提交</button>
+		</div>
+	</div>	
+	<div class="box">
+			<ul>
+				<li>
+					<img src="img/3822951_152613796000_2.jpg" alt="">
+					<div class="box3">
+						<h1>标题</h1>
+						<p>内容</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/3822951_152613796000_2.jpg" alt="">
+					<div class="box3">
+						<h1>标题</h1>
+						<p>内容</p>
+					</div>
+				</li>
+			</ul>
+	</div>
+</body>
+</html>
+<script>
+	$(function(){
+		let text = $('.text')[0];
+		let span1 = $('.span1')[0];
+		let span2 = $('.span2')[0];
+		let con = $('.content')[0];
+		let button = $('button')[0];
+		let input = $('input')[0];
+		let ul = $('ul')[0];
+		text.addEventListener('keyup',function(){
+			let a = this.value.length;
+			span1.innerText = a;
+			span2.innerText = 200 - a;
+		});
+		button.addEventListener('click',cli);
+
+		function cli(){
+			let valueT = text.value;
+			let valueP = input.value;
+			text.value = '';
+			input.value = '';
+			span1.innerText = 0;
+			span2.innerText = 100;
+			ul.innerHTML = `
+			<li>
+				<img src="img/3822951_152613796000_2.jpg" alt="">
+				<div class="box3">
+					<h1>${valueP}</h1>
+					<p>${valueT}</p>
+				</div>
+			</li>`+ul.innerHTML
+		}
+	})
+</script>
